@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width:70%;
+    min-height: 60vh;
+    justify-content: center;
+}
+
+.park{
+    display: flex;
+    margin:2rem;
+    
+}
+
+.studio{
+    display: flex;
+    margin: 2rem;
+}
+
+.ratings{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    background-color: rgba(19, 145, 61, 0.76);
+    border-radius: 4px;
+}
+
+.friends{
+    display: flex;
+    justify-content:space-around;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding:1rem;
+}
+
+.friendsrating{
+    float: left;
+}
+
+.fas.fa-star, .fas.fa-star-half-alt{
+    color: orangered;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    background: rgba(19, 145, 61, 0.76);
+    color: white;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 0 0 10px 60px;
+}
+
+.yellow{
+    color: rgb(228, 228, 51);
+}
+
+.details{
+    margin: 1rem;
+}
+
+p{
+    margin: 0;
+}
+
+.ratings:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgba(28, 116, 57, 0.829);
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        width: 100%;
+    }
+    .restaurant{
+        width: 100%;
+    }
+    img{
+        width: 30%;
+    }
+    *{
+        font-size: 12px;
+    }
+    .buttons{
+       display: none;
+    }
+}
